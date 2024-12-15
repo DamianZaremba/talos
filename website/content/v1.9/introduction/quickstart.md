@@ -24,6 +24,15 @@ brew install siderolabs/tap/talosctl
 
 Download `kubectl` via one of methods outlined in the [documentation](https://kubernetes.io/docs/tasks/tools/install-kubectl/).
 
+#### `docker`
+
+{{% alert title="Note" color="info" %}}
+If you are using an alternative `docker` provider, such as podman on a macOS computer, ensure the virtual machine has root access.
+
+```podman machine set --rootful=true```.
+
+{{% /alert %}}
+
 ### Create the Cluster
 
 Now run the following:
